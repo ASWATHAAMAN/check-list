@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-oxford-blue: hsla(212, 100%, 17%, 1);
+  --clr-oxford-blue-3: hsla(219, 100%, 10%, 1);
+  --clr-delft-blue: hsla(220, 29%, 28%, 1);
+  --clr-slate-gray: hsla(222, 11%, 54%, 1);
+  --clr-cherry-blossom-pink: hsla(345, 100%, 85%, 1);
+  --clr-bakermiller-pink: hsla(345, 100%, 78%, 1);
+  --clr-russian-violet: hsla(255, 45%, 18%, 1);
+  --clr-lilac: hsla(292, 28%, 68%, 1);
+  --clr-cornsilk: hsla(52, 94%, 94%, 1);
+  --clr-earth-yellow: hsla(32, 65%, 62%, 1);
+  --clr-tigers-eye: hsla(28, 67%, 44%, 1);
+}
+body {
+  font-family: 'Rock Salt', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgreen;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.tab {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 30%;
+  background-color: rgb(181, 243, 59);
+}
+.tab-data {
+  font-size: 22px;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 2rem;
+}
+.title {
+  color: blue;
+  font-size: 35px;
+}
+/* .strike{
+  display: block;
+  background-color: darkmagenta;
+  padding: 2rem;
+}
+.open{
+  text-decoration: line-through;
+  background-color: darkmagenta;
+}
+.close{
+  text-decoration: none;
+  background-color: rgb(181, 243, 59);
+} */
+
+.tab .tab-row th input:checked + td {
+  background-color: darkmagenta;
+  text-decoration: line-through;
+}
+
+.tab-row .row input:checked {
+  background-color: darkmagenta;
+}
+
+.tab-row .strike {
+  text-decoration: line-through;
+  background-color: darkmagenta;
+}
